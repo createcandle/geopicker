@@ -1,0 +1,97 @@
+html,body{
+    padding:0;
+}
+body{
+    padding:2rem;
+    background-color: #0a2c44;
+    color:white;
+    font-family: helvetica, sans-serif;
+}
+
+a{
+    color:white;
+}
+
+input{
+    margin-top:.5rem;
+    padding:.5rem 1rem;
+    border-radius:.5rem;
+    font-size:1.6rem;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.flexbox-wrap{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.flexbox-wrap > div{
+    padding:1rem;
+}
+
+#coordinates-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#coordinates-container > div{
+    display:none;
+    line-height: 1.6rem;
+    padding-right:2rem;
+    margin-bottom:2rem;
+}
+
+#picker{
+    position:relative;
+    width:100%;
+    /*margin:18px;*/
+}
+
+#world{
+    width:100%;
+}
+
+#indicator{
+    width:10px;
+    height:10px;
+    border-top:2px solid red;
+    border-left:2px solid red;
+    box-sizing:border-box;
+    position:absolute;
+    top:0;
+    left:0;
+    pointer-events: none;
+}
+
+#cell{
+    width:0;
+    height:0;
+    background-color:rgba(255,0,0,.4);
+    position:absolute;
+    top:0;
+    left:0;
+    pointer-events: none;
+}
+
+#search-results{
+    list-style-type: none;
+}
+
+#search-results li{
+    background-color:rgba(0,0,0,.2);
+    margin-bottom:.5rem;
+    border-radius:.5rem;
+    cursor:pointer;
+    padding:.5rem 1rem;
+}
+
+#footer{
+    margin-top:6rem;
+    padding: 1rem;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.1);
+}

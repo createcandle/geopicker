@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Privacy friendly basic geo picker</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <h1>Privacy friendly geo picker</h1>
+      <p>Gives very rough coordinates, and runs 100% in your browser. Click on the map to try it, or enter the name of a city below.</p>
+      <div id="picker">
+          <img id="world" src="world.jpg">
+          <div id="indicator"></div>
+          <div id="cell"></div>
+      </div>
+      
+      
+      <div class="flexbox-wrap">
+          <div id="search-container" style="display:none">
+              Search a city: <br/><input type="text" id="search-input" /><br />
+          
+              <ul id="search-results"></ul> 
+          
+          </div>
+      
+          <div id="coordinates-container">
+              <div id="coordinates-container-precise">
+                  <span class="bold">"Precise" coordinates:</span><br>
+                  Latitude: <span id="coordinates-lat">...</span><br/>
+                  Longtitude: <span id="coordinates-lon">...</span><br/>
+              </div>
+              <div id="coordinates-container-rounded">
+                  <span class="bold">Rounded coordinates:</span><br/>
+                  Latitude: <span id="rounded-lat">...</span><br/>
+                  Longtitude: <span id="rounded-lon">...</span><br/>
+              </div>
+          </div>
+      </div>
+         
+      <div id="footer"> 
+          By <a href="https://www.candlesmarthome.com">Candle Smart Home</a>. <a href="https://commons.wikimedia.org/wiki/File:World_location_map_(equirectangular_180).svg">Image from Wikipedia</a> under CC licence
+      </div>
+          
+	<script src="index.js"></script>
+  </body>
+</html>
